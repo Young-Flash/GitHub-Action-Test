@@ -7,7 +7,7 @@
 
     <groupId>io.github.young-flash</groupId>
     <artifactId>flash-GAT</artifactId>
-    <version>3.6.0</version>
+    <version>3.7.0</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
