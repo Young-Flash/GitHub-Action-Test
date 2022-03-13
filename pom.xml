@@ -39,15 +39,12 @@
         </developer>
     </developers>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.vesoft</groupId>
-                <artifactId>client</artifactId>
-                <version>3.0-SNAPSHOT</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <repositories>
+        <repository>
+            <id>snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
