@@ -7,7 +7,8 @@
 
     <groupId>io.github.young-flash</groupId>
     <artifactId>flash-GAT</artifactId>
-    <version>3.7.0</version>
+    <version>4.0.0</version>
+
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -39,6 +40,21 @@
         </developer>
     </developers>
 
+    <repositories>
+        <repository>
+            <id>snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.vesoft</groupId>
+            <artifactId>client</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+    </dependencies>
+
     <profiles>
 
         <!-- Deployment profile (required so these plugins are only used when deploying) -->
@@ -52,9 +68,9 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <version>3.2.0</version>
-                             <configuration>
-                                <doclint>none</doclint>
-                            </configuration>
+                        <configuration>
+                            <doclint>none</doclint>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
